@@ -16,6 +16,7 @@ body{
 }
 
 .logo {
+     color: #fff;
      font-size: 24px;
 }
 
@@ -31,6 +32,11 @@ body{
     margin-right: 20px;
     font-size: 18px;
     font-weight: bold;
+}
+
+.navegacao ul li a{
+   color: #fff;
+   text-decoration: none;
 }
 
 #sobre{
@@ -146,15 +152,20 @@ body{
     display: flex;
     justify-content: space-between;
 }
+
+
 .contato-input{
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin-bottom: 10px;
 }
 .contato-input input{
     padding: 10px;
     font-size: 18px;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 20px;
 
 
 }
@@ -162,6 +173,54 @@ body{
     padding: 10px;
     font-size: 18px;
     border: 1px solid #ccc;
+    border-radius: 5px;
     
 
 }
+.contato-input label{
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+.btn-enviar{
+   background-color: #938DF8;
+   padding: 15px;
+   color: #FFF;
+   font-size: 18px;
+   font-weight: bold;
+   border: none;
+   border-radius: 10px;
+}
+
+.rodape{
+   background-color: #938DF8;
+   display: flex;
+   padding: 30px 40px;
+   justify-content: space-between;
+   align-items: center;
+
+   
+}
+
+.rodape-contatos{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.rodape-contatos img{
+   vertical-align: middle;
+}
+.rodape-contatos a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+   margin-left: 10px;
+   margin-bottom: 10px;
+
+}
+
+.logo-minas {
+   height: 80px;
+}
+

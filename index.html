@@ -13,10 +13,10 @@
             <h1 class="logo">Suelen Batista</h1>
             <nav class="navegacao">
                 <ul>
-                    <li>Sobre Mim</li>
-                    <li>Formação</li>
-                    <li>Experiências</li>
-                    <li>Contato</li>
+                    <li><a href="#sobre" > Sobre Mim</a></li>
+                    <li><a href="#fomacao" > Formação</a></li>
+                    <li><a href="#experiencias" > Experiências</a></li>
+                    <li><a href="contatos" Contato></li></a>
                 </ul>
             </nav>
         </header>
@@ -65,25 +65,35 @@
                     <div class="contato-grupoinput">
                       <div class="contato-input">
                         <label for="nome">Nome: </label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" /><br/>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
                       </div>
 
                       <div class="contato-input">
                         <label for="email">E-mail: </label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail"/><br/>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail"/>
                       </div>
                     </div>
 
                       <div class="contato-input">
-                        <label for="mensagem">Mensagem: </label><br/>
-                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="5"></textarea><br/>
+                        <label for="mensagem">Mensagem: </label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="5"></textarea>
                       </div>
-                        <button type="submit">Enviar</button>
+                        <button class="btn-enviar" type="submit">Enviar</button>
                   </form>
             </section>
         </main>
-        <footer>
-            <a href="https://www.linkedin.com/in/suelen-batista/" target="_blank">Linkedin</a>
+        <footer class="rodape">
+          <div class="rodape-contatos">
+            <p><img src="instagram.png" alt="Logo do Instagram"/> <a href="https://instagram.com/suelenbatiista">@suelenbatiista</a></p>
+            <p><img src="github.png" alt="Logo do Github"/> <a href="https://github.com/suelen2batista">suelen2batista</a></p>
+            <p><img src="linkedin.png" alt="Logo do Linkedin"/> <a href="https://www.linkedin.com/in/suelen-batista/">Suelen Batista</a></p>
+          </div>
+
+          <div class="rodape-logo">
+            <a href="https://minasprogramam.com"><img class="logo-minas" src="logo_minas.png" alt="Logo do Minas Programam" /></a>
+          </div>
+        
+
         </footer>
     </body>
 </html>
