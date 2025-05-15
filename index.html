@@ -3,47 +3,83 @@
     <head>
         <meta charset="UTF-8" />
         <title>Suelen Batista</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Suelen Batista</h1>
+        <header id="menu">
+            <h1 class="logo">Suelen Batista</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li>Sobre Mim</li>
+                    <li>Formação</li>
+                    <li>Experiências</li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
         </header>
         <main>
-            <section>
-            <h2>Sobre Mim</h2>
-            <p>
+            <section id="sobre">
+
+                <img class="sobre-imagem" src="C:\Users\leopo\OneDrive\Área de Trabalho\Minas_Programam\paginapessoalsu/su.png" alt="Foto da Suelen sorrindo" width="200" />
+
+                <h2 class="sobre-nome">Suelen Cristina Batista</h2>
+                <h3 class="sobre-titulo">Analista de Dados</h3>
+
+            <p class=sobre-descricao>
                 Sou <strong>analista de dados</strong> e estou <strong>estudando front-end</strong>.<br/> 
                 Moro em <em>Mirassol</em> e sou apaixonada pelos meus cachorros.
             </p>
-            <p>
-                Minha frase favorita é: 
-                <cite>Enfrente seus medos e viva seus sonhos.</cite>
-            </p>
             </section>
-            <section>
-            <h2> O que eu mais gosto de fazer</h2>
-            <ul>
-                <li>Ir na academia</li>
-                <li>Assistir séries</li>
-                <li>Aprender coisas novas</li>
-                <li>Ficar em casa</li>
-            </ul>
-            <img src="su.png" alt="Foto da Suelen sorrindo" width="200" />
+            <section id="formacao">
+                <h2 class="formacao-titulo">Formação</h2>
+              <div class="formacao-lista">
+                <h3>Desenvolvimento Front End</h3>
+                <a href="https://minasprogramam.com" target="_blank">Instituto Minas Programam</a>
+                <p>Curso introdutório de desenvolvimento front-end, aprendendo conceitos de HTML, CSS e Javascript.</p>
+            
+                <h3>Bacharel em Ciência da Computação</h3>
+                <a href="https://minasprogramam.com" target="_blank">Universidade Paulista</a>
+                <p>Ciência da computação, na UNIP.</p>
+              </div>
+
             </section>
-            <section>
-                <h2>Entre em contato comigo</h2>
-                    <form>
+            <section id="experiencias">
+                <h2 class="experiencia-titulo">Experiências</h2>
+              <div class="experiencia-lista">
+                <h3>Analista de Dados</h3>
+                <a href="https://minasprogramam.com" target="_blank">Avanade</a>
+                <p>Desenvolvimento de dashboards em Power BI e Qlik Sense.</p>
+            
+                <h3>Analista de TI</h3>
+                <a href="https://tvtem.com" target="_blank">TVTEM</a>
+                <p>Suporte ao usuário em software e hardware.</p>
+              </div>
+
+            </section>
+            <section id="contato">
+                <h2 class="contato-titulo">Entre em contato comigo</h2>
+                  <form class="contato-formulario">
+                    <div class="contato-grupoinput">
+                      <div class="contato-input">
                         <label for="nome">Nome: </label>
                         <input type="text" id="nome" name="nome" placeholder="Digite seu nome" /><br/>
+                      </div>
 
+                      <div class="contato-input">
                         <label for="email">E-mail: </label>
                         <input type="email" id="email" name="email" placeholder="Digite seu e-mail"/><br/>
+                      </div>
+                    </div>
 
+                      <div class="contato-input">
                         <label for="mensagem">Mensagem: </label><br/>
-                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="4"></textarea><br/>
-
+                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="5"></textarea><br/>
+                      </div>
                         <button type="submit">Enviar</button>
-                    </form>
+                  </form>
             </section>
         </main>
         <footer>
