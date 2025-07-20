@@ -1,99 +1,137 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Suelen Batista</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header id="menu">
-            <h1 class="logo">Suelen Batista</h1>
-            <nav class="navegacao">
-                <ul>
-                    <li><a href="#sobre" > Sobre Mim</a></li>
-                    <li><a href="#formacao" > Formação</a></li>
-                    <li><a href="#experiencias" > Experiências</a></li>
-                    <li><a href="contatos" Contato></li></a>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="sobre">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Suelen Batista</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <header id="menu">
+      <h1 class="logo">Suelen Batista</h1>
+      <nav class="navegacao">
+        <ul>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#experiencias">Experiências</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-                <img class="sobre-imagem" src="su.png" alt="Foto da Suelen sorrindo" width="200" />
+    <main>
+      <section id="sobre">
+        <img class="sobre-imagem" src="su.png" alt="Foto da Suelen sorrindo" width="200" />
+        <h2 class="sobre-nome">Suelen Cristina Batista</h2>
+        <h3 class="sobre-titulo">Analista de Dados</h3>
+        <p class="sobre-descricao">
+          Tenho 32 anos, sou casada e mamãe de um bebê recém-nascido, com apenas 15 dias.</br> Amo me movimentar, fazer atividade física me faz sentir viva!</br>
 
-                <h2 class="sobre-nome">Suelen Cristina Batista</h2>
-                <h3 class="sobre-titulo">Analista de Dados</h3>
+Sou analista de dados, apaixonada por tecnologia e sempre curiosa pra aprender coisas novas.</br> Adoro explorar o mundo, descobrir lugares e viver novas experiências.</br>
 
-            <p class=sobre-descricao>
-                Sou <strong>analista de dados</strong> e estou <strong>estudando front-end</strong>.<br/> 
-                Moro em <em>Mirassol</em> e sou apaixonada pelos meus cachorros.
-            </p>
-            </section>
-            <section id="formacao">
-                <h2 class="formacao-titulo">Formação</h2>
-              <div class="formacao-lista">
-                <h3>Desenvolvimento Front End</h3>
-                <a href="https://minasprogramam.com" target="_blank">Instituto Minas Programam</a>
-                <p>Curso introdutório de desenvolvimento front-end, aprendendo conceitos de HTML, CSS e Javascript.</p>
-            
-                <h3>Bacharel em Ciência da Computação</h3>
-                <a href="https://minasprogramam.com" target="_blank">Universidade Paulista</a>
-                <p>Ciência da computação, na UNIP.</p>
-              </div>
+Tenho dois cachorros que são parte da família: o Lion e a Akira, meus companheiros de todas as horas.</br>
 
-            </section>
-            <section id="experiencias">
-                <h2 class="experiencia-titulo">Experiências</h2>
-              <div class="experiencia-lista">
-                <h3>Analista de Dados</h3>
-                <a href="https://minasprogramam.com" target="_blank">Avanade</a>
-                <p>Desenvolvimento de dashboards em Power BI e Qlik Sense.</p>
-            
-                <h3>Analista de TI</h3>
-                <a href="https://tvtem.com" target="_blank">TVTEM</a>
-                <p>Suporte ao usuário em software e hardware.</p>
-              </div>
+Gosto de viver com leveza, me reinventar e aproveitar cada fase da vida do meu jeitinho.
+        </p>
+      </section>
 
-            </section>
-            <section id="contato">
-                <h2 class="contato-titulo">Entre em contato comigo</h2>
-                  <form class="contato-formulario">
-                    <div class="contato-grupoinput">
-                      <div class="contato-input">
-                        <label for="nome">Nome: </label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
-                      </div>
+      <section id="formacao">
+        <h2 class="formacao-titulo">Formação</h2>
+        <div class="formacao-lista">
+          <h3>Desenvolvimento Front End</h3>
+          <a href="https://minasprogramam.com" target="_blank">Instituto Minas Programam</a>
+          <p>
+            Curso introdutório de desenvolvimento front-end, aprendendo conceitos de HTML, CSS e Javascript.
+          </p>
 
-                      <div class="contato-input">
-                        <label for="email">E-mail: </label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail"/>
-                      </div>
-                    </div>
+          <h3>Bacharel em Ciência da Computação</h3>
+          <a href="https://unip.br/" target="_blank">Universidade Paulista</a>
+          <p>Ciência da computação, na UNIP.</p>
+        </div>
+      </section>
 
-                      <div class="contato-input">
-                        <label for="mensagem">Mensagem: </label>
-                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="5"></textarea>
-                      </div>
-                        <button class="btn-enviar" type="submit">Enviar</button>
-                  </form>
-            </section>
-        </main>
-        <footer class="rodape">
-          <div class="rodape-contatos">
-            <p><img src="instagram.png" alt="Logo do Instagram"/> <a href="https://instagram.com/suelenbatiista">@suelenbatiista</a></p>
-            <p><img src="github.png" alt="Logo do Github"/> <a href="https://github.com/suelen2batista">suelen2batista</a></p>
-            <p><img src="linkedin.png" alt="Logo do Linkedin"/> <a href="https://www.linkedin.com/in/suelen-batista/">Suelen Batista</a></p>
+      <section id="experiencias">
+        <h2 class="experiencia-titulo">Experiências</h2>
+        <div class="experiencia-lista">
+          <h3>Analista de Dados</h3>
+          <a href="https://www.avanade.com/pt-br" target="_blank">Avanade</a>
+          <p>Power BI: Utilizo o Power BI para transformar dados em informações valiosas, criando dashboards interativos que auxiliam na tomada de decisões estratégicas.
+Qlik Sense: Estou proficiente no uso do Qlik Sense, empregando-o para visualização avançada de dados e análise de negócios em tempo real.
+SQL: Tenho expertise em consultas SQL, permitindo-me manipular eficientemente bancos de dados e extrair informações cruciais para suportar operações e estratégias empresariais.</p>
+
+          <h3>Analista de TI</h3>
+          <a href="https://redeglobo.globo.com/sp/tvtem/" target="_blank">TVTEM</a>
+          <p>Suporte Técnico: Especialização em resolver problemas de software e hardware para manter a eficiência dos sistemas.
+Desenvolvimento de Sistemas: Ativamente envolvido na implementação de novos sistemas, otimizando processos.
+Configuração de Programas: Configuração precisa de programas para o melhor desempenho.
+Resolução de Problemas: Habilidade comprovada em solucionar problemas em software, hardware e sistemas.
+Redes e Segurança: Instalação, configuração de redes e implementação de firewalls para segurança dos sistemas.
+Monitoramento Zabbix: Utilização do Zabbix para monitorar e manter a integridade dos sistemas de forma contínua.</p>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h2 class="portfolio-titulo">Portfólio</h2>
+        <div class="portfolio-galeria">
+          <div class="portfolio-item">
+            <img src="dashboard-de-vendas-por-ano.jpg" alt="Projeto 1" />
+            <p>Dashboard de Vendas - Power BI</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="qlik.png" alt="Projeto 2" />
+            <p>Portal de Indicadores - Qlik Sense</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="site_imagem.png" alt="Projeto 3" />
+            <p>Landing Page - HTML e CSS</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <h2 class="contato-titulo">Contato</h2>
+        <form class="contato-formulario">
+          <div class="contato-grupoinput">
+            <div class="contato-input">
+              <label for="nome">Nome: </label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+            </div>
+
+            <div class="contato-input">
+              <label for="email">E-mail: </label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
+            </div>
           </div>
 
-          <div class="rodape-logo">
-            <a href="https://minasprogramam.com"><img class="logo-minas" src="logo_minas.png" alt="Logo do Minas Programam" /></a>
+          <div class="contato-input">
+            <label for="mensagem">Mensagem: </label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="5"></textarea>
           </div>
-        
 
-        </footer>
-    </body>
+          <button class="btn-enviar" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="rodape-contatos">
+        <p><img src="instagram_2.jpg" alt="Logo do Instagram" /> <a href="https://instagram.com/suelenbatiista">@suelenbatiista</a></p>
+        <p><img src="git_hub.jpg" alt="Logo do Github" /> <a href="https://github.com/suelen2batista">suelen2batista</a></p>
+        <p><img src="linkedin_2.jpg" alt="Logo do Linkedin" /> <a href="https://www.linkedin.com/in/suelen-batista/">Suelen Batista</a></p>
+      </div>
+
+      <div class="rodape-logo">
+        <a href="https://www.linkedin.com/in/suelen-batista/">
+          <img class="logo-minas" src="logo_su.png" alt="Logo da Suelen" />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
+

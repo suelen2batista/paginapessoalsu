@@ -1,226 +1,188 @@
-*{
-     margin: 0;
-     padding: 0;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: "Roboto", sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+  color: #fff;
 }
 
-#menu{
-    display: flex;
-    justify-content: space-between;
-    background-color: #938DF8;
-    padding: 25px;
+/* Menu */
+#menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffcc00;
+  padding: 25px;
 }
 
 .logo {
-     color: #fff;
-     font-size: 24px;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
 }
-
 
 .navegacao ul {
-    list-style: none;
-    display: flex;
-    color: #FFF;
-    
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.navegacao ul li {
-    margin-right: 20px;
-    font-size: 18px;
-    font-weight: bold;
+.navegacao ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.navegacao ul li a{
-   color: #fff;
-   text-decoration: none;
+/* Sobre */
+#sobre {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #111;
 }
 
-#sobre{
-    text-align: center;
-    background-color: #EDEAEA;
-    padding: 60px 20px;
+.sobre-imagem {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffcc00;
 }
 
-.sobre-imagem{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
+.sobre-nome {
+  color: #ffcc00;
+  font-size: 36px;
+  margin-top: 20px;
 }
 
-.sobre-nome{
-    color: #938DF8;
-    font-size: 36px;
-    margin-top: 20px;
+.sobre-titulo {
+  color: #ddd;
+  font-size: 24px;
+  margin-top: 10px;
 }
 
-.sobre-titulo{
-    color: #C5C0C0;
-    font-size: 24px;
-    margin-top: 10px;
+.sobre-descricao {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
-.sobre-descricao{
-    font-size: 16px;
-    line-height: 1.6;
-    margin-top: 10px;
+/* Formação / Experiências */
+#formacao, #experiencias, #contato {
+  padding: 50px 10%;
 }
 
-#formacao{
-    padding: 50px 150px;
+.formacao-titulo,
+.experiencia-titulo,
+.contato-titulo,
+.portfolio-titulo {
+  color: #ffcc00;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
-.formacao-titulo{
-    color: #49BFB3;
-    font-size: 30px;
-    margin-bottom: 30px;
-    
+.formacao-lista, .experiencia-lista {
+  max-width: 700px;
+  margin: auto;
 }
 
-.formacao-lista{
-    width: 600px;
-    margin: 0 auto;
-}
-.formacao-lista h3 {
-    font-size: 18px;
-    color: #828282;
-    margin-bottom: 10px;
-    width: 180px;
-}
-.formacao-lista a {
-    color: #2f80ed;
-    font-size: 20px;
-    margin-bottom: 10px;
-
-}
-.formacao-lista p{
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 20px;
+.formacao-lista h3, .experiencia-lista h3 {
+  font-size: 20px;
+  color: #ffcc00;
 }
 
-#experiencias{
-    background-color: #EDEAEA;
-    padding: 50px 150px;
-}
-.experiencia-titulo{
-    color: #49BFB3;
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-.experiencia-lista{
-    width: 600px;
-    margin: 0 auto;
-
-}
-.experiencia-lista h3{
-    font-size: 18px;
-    color: #828282;
-    margin-bottom: 10px;
-    width: 180px;
-}
-.experiencia-lista a {
-    color: #2f80ed;
-    font-size: 20px;
-    margin-bottom: 10px;
-
-}
-.experiencia-lista p{
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 20px;
-}
-#contato{
-    padding: 50px 150px;
-}
-.contato-titulo{
-    color: #49BFB3;
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-.contato-formulario{
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-    margin: 0 auto;
-}
-.contato-grupoinput{
-    display: flex;
-    justify-content: space-between;
+.formacao-lista a, .experiencia-lista a {
+  color: #fff700;
+  font-size: 18px;
+  text-decoration: underline;
 }
 
-
-.contato-input{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-bottom: 10px;
-}
-.contato-input input{
-    padding: 10px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 20px;
-
-
-}
-.contato-input textarea{
-    padding: 10px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    
-
-}
-.contato-input label{
-   font-size: 18px;
-   margin-bottom: 10px;
+/* Contato */
+.contato-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: auto;
 }
 
-.btn-enviar{
-   background-color: #938DF8;
-   padding: 15px;
-   color: #FFF;
-   font-size: 18px;
-   font-weight: bold;
-   border: none;
-   border-radius: 10px;
+.contato-input {
+  display: flex;
+  flex-direction: column;
 }
 
-.rodape{
-   background-color: #938DF8;
-   display: flex;
-   padding: 30px 40px;
-   justify-content: space-between;
-   align-items: center;
-
-   
+.contato-input input,
+.contato-input textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #fff;
 }
 
-.rodape-contatos{
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
+.btn-enviar {
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.rodape-contatos img{
-   vertical-align: middle;
+/* Portfólio */
+#portfolio {
+  padding: 50px 10%;
+  background-color: #111;
 }
+
+.portfolio-galeria {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-item {
+  width: 250px;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #ffcc00;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.portfolio-item p {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #ffcc00;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .rodape-contatos a {
-   color: #fff;
-   text-decoration: none;
-   font-size: 18px;
-   margin-left: 10px;
-   margin-bottom: 10px;
-
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 .logo-minas {
-   height: 80px;
+  height: 60px;
 }
 
